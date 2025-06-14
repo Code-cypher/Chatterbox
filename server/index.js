@@ -9,6 +9,13 @@ import contactsRoutes from "./routes/ContactsRoutes.js"
 import setupSocket from "./socket.js"
 import messagesRoutes from "./routes/MessagesRoutes.js"
 import channelRoutes from "./routes/ChannelRoutes.js"
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// For ES modules (since you're using import)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
 dotenv.config()
