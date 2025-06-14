@@ -28,6 +28,14 @@ app.use(cors(
     }
 ))
 
+// Serve static files from the public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.use("/uploads/profiles", express.static("uploads/profiles"))
 app.use("/uploads/files",express.static("uploads/files"))
 

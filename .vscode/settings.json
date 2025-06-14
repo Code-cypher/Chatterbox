@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/67dd3e82-5300-4760-a2ad-924abdfc4c1e/resourceGroups/Chatterbox/providers/Microsoft.Web/sites/Chatterbox-server",
+    "appService.deploySubpath": "server"
+}
